@@ -65,9 +65,9 @@ class RT_Autoloader {
 
 		wp_enqueue_media();
 		wp_enqueue_script( 'jquery-ui-sortable' );
-		wp_enqueue_script( 'rt-admin-script', __RT_ASSETS_URL . '/js/rt-admin-script.js', array( 'jquery', 'jquery-ui-sortable' ), filemtime( __RT_ASSETS_PATH . 'js/rt-admin-script.js' ), true );
+		wp_enqueue_script( 'rt-admin-script', __RT_ASSETS_URL . '/js/rt-admin-script.js', array( 'jquery', 'jquery-ui-sortable' ), __RT_VERSION, true );
 
-		wp_enqueue_style( 'rt-admin-style', __RT_ASSETS_URL . 'css/rt-admin-style.css', array(), filemtime( __RT_ASSETS_PATH . 'css/rt-admin-style.css' ) );
+		wp_enqueue_style( 'rt-admin-style', __RT_ASSETS_URL . 'css/rt-admin-style.css', array(), __RT_VERSION );
 	}
 
 	/**
@@ -76,7 +76,7 @@ class RT_Autoloader {
 	public static function load_frontend_scripts(): void {
 
 		wp_register_script( 'rt-slick-script', __RT_ASSETS_URL . 'js/slick.min.js', array( 'jquery' ), __RT_SLICK_VERSION, true );
-		wp_register_script( 'rt-script', __RT_ASSETS_URL . 'js/rt-script.js', array( 'jquery', 'rt-slick-script' ), filemtime( __RT_ASSETS_PATH . 'js/rt-script.js' ), true );
+		wp_register_script( 'rt-script', __RT_ASSETS_URL . 'js/rt-script.js', array( 'jquery', 'rt-slick-script' ), __RT_VERSION, true );
 
 		$rt_slider       = get_option( '__rt_slider' );
 		$slider_settings = ! empty( $rt_slider['settings'] ) ? $rt_slider['settings'] : array();
@@ -85,6 +85,6 @@ class RT_Autoloader {
 
 		wp_register_style( 'rt-slick-style', __RT_ASSETS_URL . 'css/slick.css', array(), __RT_SLICK_VERSION );
 		wp_register_style( 'rt-slick-theme-style', __RT_ASSETS_URL . 'css/slick-theme.css', array(), __RT_SLICK_VERSION );
-		wp_register_style( 'rt-style', __RT_ASSETS_URL . 'css/rt-style.css', array(), filemtime( __RT_ASSETS_PATH . 'css/rt-style.css' ) );
+		wp_register_style( 'rt-style', __RT_ASSETS_URL . 'css/rt-style.css', array(), __RT_VERSION );
 	}
 }

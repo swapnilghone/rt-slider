@@ -14,10 +14,10 @@ jQuery(function ($) {
         acc[key] = value === "on" ? true : value;
         return acc;
     }, {});
-    console.log(plugin_settings);
+    // console.log(plugin_settings);
 
     const settings  = {...default_settings,...plugin_settings};
     
     $('.rt-slider').slick(settings);
-    console.log(settings);
+    // console.log(settings);
 })
