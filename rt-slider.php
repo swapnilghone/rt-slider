@@ -2,8 +2,8 @@
 /**
  * Plugin Name: Rt Slider
  * Plugin URI: https://github.com/swapnilghone/rt-slider
- * Description: rtCamp Assignemnt Slider Plugin
- * Version: 1.0.0
+ * Description: Straightforward slider plugin for WordPress, offering a seamless solution with its easy-to-use rt-slider shortcode. This plugin empowers you to create dynamic sliders effortlessly, allowing you to showcase your content in an engaging and visually appealing manner.
+ * Version: 1.0.1
  * Author: Swapnil Ghone
  * Author URI: https://www.linkedin.com/in/swapnil-ghone/
  * License: GPL2
@@ -13,6 +13,10 @@
  *
  * @package rt-slider
  */
+
+if ( ! defined( '__RT_VERSION' ) ) {
+	define( '__RT_VERSION', '1.0.1' );
+}
 
 if ( ! defined( '__RT_SLICK_VERSION' ) ) {
 	define( '__RT_SLICK_VERSION', '1.8.1' );
