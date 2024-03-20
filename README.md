@@ -1,7 +1,7 @@
 
 # Rt Slider Plugin
 
-Welcome to the Elementor GitHub repository!
+Welcome to the Rt Slider GitHub repository!
 
 Rt Slider is an easy-to-use WordPress plugin that makes it simple to create visually appealing sliders for your website. Its user-friendly interface allows you to quickly add slider images and customize various settings to match your site's look and feel.
 
