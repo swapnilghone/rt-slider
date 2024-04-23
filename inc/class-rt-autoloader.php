@@ -34,6 +34,7 @@ class RT_Autoloader {
 		$classes = array(
 			'RT\Slider\inc\RT_Admin'      => 'class-rt-admin.php',
 			'RT\Slider\inc\RT_Shortcodes' => 'class-rt-shortcodes.php',
+			'RT\Slider\inc\RT_CLI'        => 'class-rt-cli.php',
 		);
 
 		foreach ( $classes as $class => $file ) {
