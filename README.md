@@ -51,3 +51,18 @@ These instructions will get you a copy of the project up and running on your loc
   
 
 Rt Slider is licensed under the MIT License - see the [LICENSE.TXT](LICENSE.TXT) file for details
+
+
+## Change Log
+
+== Changelog ==
+
+= 1.1 - 19 April 2024 =
+* Added CLI command to configure the slider
+
+= 1.0.1 - 20 March 2024 =
+* Added Version Constant
+* Fixed the readme typo
+ 
+= 1.0.0 - 16 March 2024 =
+* Inital Release.  
